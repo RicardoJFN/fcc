@@ -1,7 +1,6 @@
-function convert(celsius: number) {
+function convert(celsius) {
     return ((celsius * 9) / 5) + 32;
 }
-
 console.log(convert(0));
 console.log(convert(-30));
 console.log(convert(-10));
