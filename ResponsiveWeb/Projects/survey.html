@@ -1,1 +1,61 @@
 <!DOCTYPE html>
+<head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Comfortaa" rel="stylesheet"> 
+    <link rel="stylesheet" href="survey.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" id="center-div">
+                <p id="description">Let us know how we can improve freeCodeCamp =)</p>
+                
+                <form id="survey-form" action="/" method="POST">
+                    <div>
+                        <label for="name" id="name-label">Name: </label>
+                        <input type="text" id="name" name="user_name" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">E-mail: </label>
+                        <input type="email" id="email" name="user_email" placeholder="email@email.com">
+                    </div>
+                    <div>
+                        <label for="number" id="number-label">Age: </label>
+                        <input type="number" id="number" name="user_age" min="1" max="100" placeholder="4">
+                    </div>
+                    <div>
+                        <label for="profession" id="dropdown">What's your profession: </label>
+                        <select name="profession">
+                            <option value="developer">Developer</option>
+                            <option value="fe-dev">Front-End Developer</option>
+                            <option value="be-dev">Back-End Developer</option>
+                            <option value="fullstack">Fullstack</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="recommend">Do you recommend fCC?</label><br>
+                        <input type="radio" name="recommend" value="yes"> Yes<br>
+                        <input type="radio" name="recommend" value="no"> No<br>
+                        <input type="radio" name="recommend" value="maybe"> Maybe
+                    </div>
+                    <div>
+                        <label for="sug">Any recommendations or sugestions?</label><br>
+                        <textarea name="sug" placeholder="Write it here"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>

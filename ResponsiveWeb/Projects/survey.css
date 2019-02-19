@@ -1,0 +1,19 @@
+body {
+    background-color: bisque;
+}
+
+#title {
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+#description {
+    font-family: 'Comfortaa', cursive;
+    text-align: center; 
+}
+
+#center-div {
+    margin-top: 3em;
+    background-color: whitesmoke;
+    height: 15em;
+}
