@@ -19,39 +19,49 @@
                 <form id="survey-form" action="/" method="POST">
                     <div>
                         <label for="name" id="name-label">Name: </label>
-                        <input type="text" id="name" name="user_name" placeholder="Your name">
+                        <input type="text" id="name" name="user_name" placeholder="Your name" required>
                     </div>
                     <div>
                         <label for="email" id="email-label">E-mail: </label>
-                        <input type="email" id="email" name="user_email" placeholder="email@email.com">
+                        <input type="email" id="email" name="user_email" placeholder="email@email.com" required>
                     </div>
+                    <br>
                     <div>
                         <label for="number" id="number-label">Age: </label>
                         <input type="number" id="number" name="user_age" min="1" max="100" placeholder="4">
                     </div>
+                    <br>
                     <div>
-                        <label for="profession" id="dropdown">What's your profession: </label>
-                        <select name="profession">
-                            <option value="developer">Developer</option>
-                            <option value="fe-dev">Front-End Developer</option>
-                            <option value="be-dev">Back-End Developer</option>
-                            <option value="fullstack">Fullstack</option>
+                        <label for="profession">What's your profession: </label>
+                        <select name="profession" id="dropdown">
+                            <option id="dropdown" value="developer">Developer</option>
+                            <option id="dropdown" value="fe-dev">Front-End Developer</option>
+                            <option id="dropdown" value="be-dev">Back-End Developer</option>
+                            <option id="dropdown" value="fullstack">Fullstack</option>
                         </select>
                     </div>
+                    <br>
                     <div>
                         <label for="recommend">Do you recommend fCC?</label><br>
                         <input type="radio" name="recommend" value="yes"> Yes<br>
                         <input type="radio" name="recommend" value="no"> No<br>
                         <input type="radio" name="recommend" value="maybe"> Maybe
                     </div>
+                    <br>
+                    <div>
+                        <label for="learn">What would you like to learn more?</label><br>
+                        <input type="checkbox" name="learn" value="fe"> Front-End <br>
+                        <input type="checkbox" name="learn" value="bd"> Back-End <br>
+                        <input type="checkbox" name="learn" value="wd"> Web-Design <br>
+                        <input type="checkbox" name="learn" value="sql"> SQL <br>
+                    </div>
+                    <br>
                     <div>
                         <label for="sug">Any recommendations or sugestions?</label><br>
                         <textarea name="sug" placeholder="Write it here"></textarea>
                     </div>
                     <br>
-                    <div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                 </form>
             </div>
         </div>
